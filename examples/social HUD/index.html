@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Social HUD</title>
+    <meta name="description" content="Display Social Media">
+    <script src="../../../dist/aframe.js"></script>
+  </head>
+  <body>
+  	<a-scene>
+  	  <a-asset-item id="why-male-models" src="man/man.dae"></a-asset-item>
+        <img id="twitter" src="https://twitter.com/">
+        <img id="reddit" src="https://www.reddit.com/">
+        <img id="weather" src="https://weather.com/weather/today/l/47.67,-122.39">
+        <img id="facebook" src="https://www.facebook.com/">
+      </a-assets>
+
+      <a-curvedimage id="twitter-frame" src="#twitter" radius="5.7" theta-length="36" height="1"
+                     position="0 2.6 -1" opacity="0.5">
+      </a-curvedimage>
+
+      <a-curvedimageid id="reddit-frame" src="#reddit" radius="5.7" theta-length="36" height="1"
+                     position="0 2.6 -1" opacity="0.5">
+      </a-curvedimage>
+
+      <a-curvedimage id="weather-frame" src="#weather" radius="5.7" theta-length="36" height="1"
+                     position="0 2.6 -1" opacity="0.5">
+      </a-curvedimage>
+
+      <a-curvedimage id="facebook-frame" src="#facebook" radius="5.7" theta-length="36" height="1"
+                     position="0 2.6 -1" opacity="0.5">
+      </a-curvedimage>
+
+  	</a-scene>
+  </body>
+</html>
